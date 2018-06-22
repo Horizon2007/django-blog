@@ -24,6 +24,7 @@ SECRET_KEY = 'xp74fz%^4msgp)76ybj8c5fu6d56b&ds@tqi6#-k@w2u5$wsp='
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+#DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -119,10 +120,34 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-#access static by url
+#access static files by url
 STATIC_URL = '/static/'
-
+#the dir for command "python manage.py collectstatic"
+#STATIC_ROOT is useless during development, it's only required for deployment.
 STATIC_ROOT = os.path.join(BASE_DIR, "collect_static")
+#locate the common static files
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'common_static')
     ]
+
+
+#MEDIA_ROOT is the folder where every files uploaded with an FileField will go.
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
