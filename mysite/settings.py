@@ -121,7 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 #access static files by url
-STATIC_URL = '/static/'
+STATIC_URL = '/mystatic/'
 #the dir for command "python manage.py collectstatic"
 #STATIC_ROOT is useless during development, it's only required for deployment.
 STATIC_ROOT = os.path.join(BASE_DIR, "collect_static")
