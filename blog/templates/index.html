@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,16 +8,16 @@
     <meta name="author" content="webthemez">
     <title>Home</title>
 	<!-- core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet"> 
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet"> 
+    <link href="{% static 'blog/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'blog/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'blog/css/animate.min.css' %}" rel="stylesheet"> 
+    <link href="{% static 'blog/css/prettyPhoto.css' %}" rel="stylesheet">
+    <link href="{% static 'blog/css/styles.css' %}" rel="stylesheet"> 
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico"> 
+    <link rel="shortcut icon" href="% static 'blog/images/ico/favicon.ico' %}"> 
 </head> 
 
 <body id="home">
@@ -31,7 +32,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index.html"><img src="{% static 'blog/images/logo.png' %}" alt="logo"></a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
@@ -71,7 +72,7 @@
                 <p class="wow fadeInDown">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa <br> semper aliquam quis mattis quam.</p>
             </div>
 	 <div class="row FeatLayout">
-<div class="col-md-5 Featimg"> <img src="images/features_img.png" alt="feature" class="img-responsive center-block"></div>
+<div class="col-md-5 Featimg"> <img src="{% static 'blog/images/features_img.png' %}" alt="feature" class="img-responsive center-block"></div>
 <div class="col-md-7">
 <h2>We Make your life easy</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget risus vitae massa semper aliquam quis mattis quam adipiscing elit. Praesent eget risus vitae massa.</p>
@@ -184,7 +185,7 @@
 
             <div class="row">
                 <div class="col-sm-6 wow fadeInLeft">
-                  <img class="img-responsive" src="images/about.png" alt="">
+                  <img class="img-responsive" src="{% static 'blog/images/about.png' %}" alt="">
                 </div>
 
                 <div class="col-sm-6 wow fadeInRight">
@@ -685,14 +686,14 @@
         </div>
     </footer><!--/#footer-->
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script> 
-    <script src="js/mousescroll.js"></script>
-    <script src="js/smoothscroll.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/custom-scripts.js"></script>
+    <script src="{% static 'blog/js/jquery.js' %}"></script>
+    <script src="{% static 'blog/js/bootstrap.min.js' %}"></script> 
+    <script src="{% static 'blog/js/mousescroll.js' %}"></script>
+    <script src="{% static 'blog/js/smoothscroll.js' %}"></script>
+    <script src="{% static 'blog/js/jquery.prettyPhoto.js' %}"></script>
+    <script src="{% static 'blog/js/jquery.isotope.min.js' %}"></script>
+    <script src="{% static 'blog/js/jquery.inview.min.js' %}"></script>
+    <script src="{% static 'blog/js/wow.min.js' %}"></script>
+    <script src="{% static 'blog/js/custom-scripts.js' %}"></script>
 </body>
 </html>
